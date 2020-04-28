@@ -6,7 +6,8 @@ describe('UserInput', () => {
   it('matches a snapshot', () => {
     const wrapper = shallow(<UserInput 
       username='janellemellor'
-      onUsernameChange={() => {}}/>);
+      onUsernameChange={() => {}} 
+      onUsernameSubmit={() => {}}/>);
     expect(wrapper).toMatchSnapshot();
   });
 });
