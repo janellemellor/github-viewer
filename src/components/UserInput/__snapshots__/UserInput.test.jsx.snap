@@ -1,12 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`UserInput matches a snapshot 1`] = `
-<Fragment>
+<form
+  onSubmit={[Function]}
+>
   <input
     name="username"
     onChange={[Function]}
     type="text"
     value="janellemellor"
   />
-</Fragment>
+  <button>
+    Find Github User!
+  </button>
+</form>
 `;
