@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserRepoDisplay matches a snapshot 1`] = `
+<Fragment>
+  <p>
+    https://github.com/janellemellor?tab=repositories
+  </p>
+</Fragment>
+`;
