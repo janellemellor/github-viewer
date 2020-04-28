@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserInfoDisplay matches a snapshot 1`] = `
+<Fragment>
+  <p>
+    janellemellor
+  </p>
+  <p>
+    2
+  </p>
+  <p>
+    1
+  </p>
+  <p>
+    https://github.com/janellemellor
+  </p>
+</Fragment>
+`;
