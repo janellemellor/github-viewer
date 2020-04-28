@@ -1,6 +1,6 @@
 import React from 'react';
-import UserInfoDisplay from '../UserInfoDisplay/UserInfoDisplay.jsx';
+import UserInput from '../UserInput/UserInput.jsx';
 
 export default function App() {
-  return <UserInfoDisplay />;
+  return <UserInput />;
 }
