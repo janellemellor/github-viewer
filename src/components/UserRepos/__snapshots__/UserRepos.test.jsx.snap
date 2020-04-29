@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserRepos matches a snapshot 1`] = `
+<ul>
+  <UserRepo
+    html_url="https://github.com/mental-health-twitterbot/backend"
+    id={1}
+    key="1"
+    name="backend"
+  />
+  <UserRepo
+    html_url="https://github.com/janellemellor/mongo-aggregation"
+    id={2}
+    key="2"
+    name="mongo-aggregation"
+  />
+</ul>
+`;
