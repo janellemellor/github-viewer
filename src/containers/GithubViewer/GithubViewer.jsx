@@ -25,7 +25,7 @@ export default class GithubViewer extends Component {
       const { username } = this.state;
       return (
         <>
-          <UserInput username={username} onUsernameChange={this.handleUsernameChange} />
+          <UserInput username={username} onUsernameChange={this.handleUsernameChange} onUsernameSubmit={this.handleUsernameSubmit}/>
         </>
       );
     }
