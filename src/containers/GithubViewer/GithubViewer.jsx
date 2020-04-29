@@ -8,14 +8,20 @@ export default class GithubViewer extends Component {
     state = {
       username: 'username',
       user: {
-        username:'', followerCount: 0, followingCount: 0, profileUrl: '' 
+        //may need to come back and have these match the api keys here and in display. Double check whether these are actually needed here in state. 
+        username:'', 
+        followerCount: 0, 
+        followingCount: 0, 
+        profileUrl: '' 
       } 
+      //will likely also need to add in repos as state
     }
     
     handleUsernameChange = ({ target }) => {
       this.setState({ username: target.value });
     };
 
+    //async/await since fetching from an api?
     handleUsernameSubmit = () => {
       fetchGithubUser(this.state.username)
         .then(user => this.setState({ user }));
@@ -30,3 +36,4 @@ export default class GithubViewer extends Component {
       );
     }
 }
+
