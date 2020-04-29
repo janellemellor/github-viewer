@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const UserRepo = ({ repoName, repoUrl }) => (
+const UserRepo = ({ name, html_url }) => (
   <li>
-    <p>{repoName}</p>
-    <p>{repoUrl}</p>
+    <p>{name}</p>
+    <p>{html_url}</p>
   </li>
 );
 
 UserRepo.propTypes = {
-  repoName: PropTypes.string.isRequired,
-  repoUrl: PropTypes.string.isRequired 
+  name: PropTypes.string.isRequired,
+  html_url: PropTypes.string.isRequired 
 };
 
 export default UserRepo;
