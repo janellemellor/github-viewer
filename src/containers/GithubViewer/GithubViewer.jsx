@@ -6,14 +6,20 @@ import { fetchGithubUser } from '../../services/gitHubApi.js';
 
 export default class GithubViewer extends Component {
     state = {
-      username: 'enter username'
+      username: 'username',
+      user: {
+        username:'', followerCount: 0, followingCount: 0, profileUrl: '' 
+      } 
     }
     
     handleUsernameChange = ({ target }) => {
       this.setState({ username: target.value });
     };
 
-    handleUsernameSubmit
+    handleUsernameSubmit = () => {
+      fetchGithubUser(this.state.username)
+        .then(user => this.setState({ user }));
+    }
 
     render() {
       const { username } = this.state;
