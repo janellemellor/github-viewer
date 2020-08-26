@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserRepo matches a snapshot 1`] = `
+<li>
+  <p>
+    backend
+  </p>
+  <p>
+    https://github.com/mental-health-twitterbot/backend
+  </p>
+</li>
+`;
